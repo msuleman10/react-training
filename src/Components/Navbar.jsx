@@ -1,7 +1,12 @@
 import React from 'react';
-// import { useState } from "react";
-// import Home from '../Pages/Home';
+import { useState } from "react";
+import Home from '../Pages/Home';
 function Navbar() {
+    const [data , setData]=useState("hello");
+    
+    const handelClick=()=>{
+        setData(<Home />)
+    };
     return (
         <>
         <nav>
@@ -10,11 +15,9 @@ function Navbar() {
                 <input type="text" />
                 <button>search</button>
             </div>
-            <button>Home</button>
-            <button>About</button>
-            <button>contect</button>
-            <button>Login</button>
+            <button onClick={handelClick}>Home</button>
         </nav>
+        <div>{data}</div>
         </>
     )
 }
