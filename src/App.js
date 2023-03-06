@@ -1,18 +1,34 @@
 import './App.css';
-// import Navbar from './Components/Navbar';
-import ClassB from './Components/ClassB';
-import FuncB from './Components/FuncB'
-// import Home from './Pages/Home'
+import Hello from "./Components/Card";
 
 function App() {
-  return (
-    <div className="app">
-      {/* <Navbar /> */}
-      <ClassB names="Suleman"/>
-      <FuncB age="18"/>
-      <ClassB names="Majid" age="25"/>
+  let data=[
+    {
+      'mname' : "Your Name",
+      'mpath' : "https://upload.wikimedia.org/wikipedia/it/3/3b/Your_Name.jpg",
+      "mdata" : "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been thise industr"
+    },
+    {
+      'mname' : "Your Name",
+      'mpath' : "https://upload.wikimedia.org/wikipedia/it/3/3b/Your_Name.jpg",
+      "mdata" : "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been thise industr"
+    },
+    {
+      'mname' : "Your Name",
+      'mpath' : "https://upload.wikimedia.org/wikipedia/it/3/3b/Your_Name.jpg",
+      "mdata" : "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been thise industr"
+    }
+    
+];
 
+  return (
+    <>
+    <div className="app">
+      {data.map((user,index)=>(
+        <Hello key={index} name={user.mname} path={user.mpath} data={user.mdata}/>
+      ))}
     </div>
+    </>
   );
 }
 
