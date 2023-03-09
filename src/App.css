@@ -42,7 +42,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-.app{
+/* .app{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -69,4 +69,50 @@
 }
 .cards p{
   text-align: center;
+} */
+
+.head{
+  text-align: center;
+  padding: 20px 0px ;
+  background-color: blue;
+  color: bisque;
+}
+.faields{
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+.faields input{
+  font-size: x-large;
+  font-weight: 700;
+  padding: 10px 5px;
+}
+.dataFetch{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.dataFetch button{
+  border: none;
+  background-color: rgb(4, 174, 4);
+  color: white;
+  padding: 10px 20px;
+  font-size: x-large;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dataFetch button:active{
+  background-color: rgb(1, 102, 1);
+}
+.user-data{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+  margin-top: 5rem;
 }
